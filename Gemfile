@@ -12,7 +12,7 @@ group :production do
     gem 'rails_12factor'
 end
 
-ruby '2.2.4' #SC declares a Ruby version for heroku
+ruby '2.3.0' #SC declares a Ruby version for heroku
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
