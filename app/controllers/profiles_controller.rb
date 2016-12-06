@@ -9,7 +9,7 @@ class ProfilesController < ApplicationController
         @user = User.find( params[:user_id] )
         @profile = @user.build_profile(profile_params) #store the content from the form and binds it with the user_id
         if @profile.save
-            flash[:sucess] = "Profile Updated"
+            flash[:sucess] = "Profile Updated!"
             redirect_to user_path( params[:user_id] )#path lead to the user show page
         else
             render action: :new
